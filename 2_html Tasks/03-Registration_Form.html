@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Student developer registration form built using HTML."
+    >
+
+    <title>Developer Registration</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Developer Registration</h1>
+
+        <p>
+            Register for the Web Development Learning Program
+        </p>
+
+    </header>
+
+    <main>
+
+        <form
+            action="/submit-registration"
+            method="post"
+        >
+
+            <fieldset>
+
+                <legend>Personal Information</legend>
+
+                <p>
+
+                    <label for="full-name">
+                        Full Name:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full_name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                </p>
+
+                <p>
+
+                    <label for="email">
+                        Email:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </p>
+
+                <p>
+
+                    <label for="phone">
+                        Phone Number:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+91 9876543210"
+                        autocomplete="tel"
+                        pattern="[0-9+ -]{10,15}"
+                        required
+                    >
+
+                </p>
+
+                <p>
+
+                    <label for="date-of-birth">
+                        Date of Birth:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="date"
+                        id="date-of-birth"
+                        name="date_of_birth"
+                        required
+                    >
+
+                </p>
+
+                <p>
+
+                    <label for="password">
+                        Password:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        minlength="8"
+                        required
+                    >
+
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Education</legend>
+
+                <p>
+
+                    <label for="course">
+                        Current Course:
+                    </label>
+
+                    <br>
+
+                    <select
+                        id="course"
+                        name="course"
+                        required
+                    >
+
+                        <option value="">
+                            Select your course
+                        </option>
+
+                        <option value="bca">
+                            BCA
+                        </option>
+
+                        <option value="btech">
+                            B.Tech
+                        </option>
+
+                        <option value="bsc">
+                            B.Sc
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </p>
+
+                <p>
+
+                    <label for="qualification">
+                        Highest Qualification:
+                    </label>
+
+                    <br>
+
+                    <input
+                        list="qualifications"
+                        id="qualification"
+                        name="qualification"
+                    >
+
+                    <datalist id="qualifications">
+
+                        <option value="12th">
+                        <option value="Diploma">
+                        <option value="Bachelor's Degree">
+                        <option value="Master's Degree">
+
+                    </datalist>
+
+                </p>
+
+                <p>
+
+                    <label for="graduation-year">
+                        Expected Graduation Year:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="number"
+                        id="graduation-year"
+                        name="graduation_year"
+                        min="2026"
+                        max="2035"
+                    >
+
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Developer Preferences</legend>
+
+                <p>
+                    Preferred Career Path:
+                </p>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="career"
+                        value="frontend"
+                        required
+                    >
+                    Frontend Developer
+                </label>
+
+                <br>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="career"
+                        value="backend"
+                    >
+                    Backend Developer
+                </label>
+
+                <br>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="career"
+                        value="fullstack"
+                    >
+                    Full Stack Developer
+                </label>
+
+                <p>
+                    Technologies you know:
+                </p>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="technology"
+                        value="html"
+                    >
+                    HTML
+                </label>
+
+                <br>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="technology"
+                        value="css"
+                    >
+                    CSS
+                </label>
+
+                <br>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="technology"
+                        value="javascript"
+                    >
+                    JavaScript
+                </label>
+
+                <br>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="technology"
+                        value="react"
+                    >
+                    React
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Additional Information</legend>
+
+                <p>
+
+                    <label for="profile-picture">
+                        Profile Picture:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="file"
+                        id="profile-picture"
+                        name="profile_picture"
+                        accept="image/*"
+                    >
+
+                </p>
+
+                <p>
+
+                    <label for="github">
+                        GitHub Profile:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="url"
+                        id="github"
+                        name="github"
+                        placeholder="https://github.com/username"
+                    >
+
+                </p>
+
+                <p>
+
+                    <label for="about">
+                        Tell us about yourself:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="about"
+                        name="about"
+                        rows="7"
+                        cols="50"
+                        minlength="20"
+                        maxlength="500"
+                        placeholder="Write something about yourself..."
+                    ></textarea>
+
+                </p>
+
+            </fieldset>
+
+            <p>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        name="terms"
+                        required
+                    >
+
+                    I agree to the terms and conditions.
+
+                </label>
+
+            </p>
+
+            <button type="submit">
+                Submit Registration
+            </button>
+
+            <button type="reset">
+                Reset Form
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2026 Developer Learning Program
+        </p>
+
+    </footer>
+
+</body>
+</html>
