@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="Enter your name" onblur="a()">
+    <span id="error1"></span>
+    <br><br>
+    <input type="password" id="userpassword" placeholder="Enter your password" onblur="b()">
+    <span id="error2"></span>
+    <br><br>
+    <input type="email" id="useremail" placeholder="Enter your email" onblur="c()">
+    <span id="error3"></span>
+    <br><br>
+    <input type="text" id="usercity" placeholder="Enter your city" onblur="d()">
+    <span id="error4"></span>
+
+    <h1>hello world</h1>
+    <h1>hello world</h1>
+    <h1>hello world</h1>
+    <h1>hello world</h1>
+
+    <script>
+
+        let username = document.getElementById("username");
+        let userpassword = document.getElementById("userpassword");
+        let useremail = document.getElementById("useremail");
+        let usercity = document.getElementById("usercity");
+
+        function a(){
+            console.log(username.value);
+
+            if(username.value == ""){
+                document.getElementById("error1").innerText = "Enter your name";
+                document.getElementById("error1").style.color="red";
+            }
+
+            else{
+                document.getElementById("error1").innerText = "";
+            }
+            
+        }
+
+        function b(){
+            console.log(userpassword.value);
+
+            if(userpassword.value == ""){
+                document.getElementById("error2").innerText = "Enter your password";
+                document.getElementById("error2").style.color="red";
+            }
+
+            else{
+                document.getElementById("error2").innerText = "";
+            }
+            
+        }
+
+        function c(){
+            console.log(useremail.value);
+
+            if(username.value == ""){
+                document.getElementById("error3").innerText = "Enter your email";
+                document.getElementById("error3").style.color="red";
+            }
+
+            else{
+                document.getElementById("error3").innerText = "";
+            }
+            
+        }
+
+        function d(){
+            console.log(usercity.value);
+
+            if(usercity.value == ""){
+                document.getElementById("error4").innerText = "Enter your city";
+                document.getElementById("error4").style.color="red";
+            }
+
+            else{
+                document.getElementById("error4").innerText = "";
+            }
+            
+        }
+
+
+
+    </script>
+</body>
+</html>
