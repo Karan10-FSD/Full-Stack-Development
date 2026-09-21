@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#background1{
+    background-image: url(Background1.png);
+    width: 100%;
+    background-size: cover;
+}
+
+#logo{
+    padding-top: 59px;
+    display: flex;
+    justify-self: center;  
+}
+
+.navbar{
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   gap: 25px;
+   font-size: 25px;
+   color: white;
+   font-family: "Lato";
+   margin-top: 35px;
+}
+
+#delicious{
+    font-size: 250px;
+    color: white;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+}
+
+.para1{
+    width: 1499px;
+    height: 340px;
+    padding-top: 40px;
+    font-size: 30px;
+    color: white;
+    font-family: "Lato";
+    text-align: center;
+}
+
+#order{
+    background-color: white;
+    height: 50px;
+    width: 270px;
+    font-size: 25px;
+    border-radius: 30px;
+    border-color:white;
+    color: red;
+    font-weight: bolder;
+    position: absolute;
+    top: 675px;
+    left: 600px;
+}
+
+#background2{
+    background-image: url(background2.png);
+    width: 100%;
+    background-size: cover;
+}
+
+#popular{
+    font-size: 125px;
+    color: #e8565e;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+}
+
+#para2{
+    width: 1509px;
+    height: 210px;
+    font-size: 30px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    margin-top: 20px;
+}
+
+#containerofthree{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+#maggi1{
+    height: 600px;
+}
+
+#pho{
+    margin-top: 10px;
+}
+
+#ot{
+    margin-top: 10px;
+}
+
+#to{
+    margin-top: 10px;
+}
+
+#background3{
+    background-image: url(background3.png);
+    width: 100%;
+    background-size: cover;
+}
+
+#slide3head{
+    margin-top: 155px;
+}
+
+#threecircle{
+    margin-top: 135px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+#cir{
+    height: 550px;
+}
+
+#background4{
+    background-image: url(background4.png);
+    width: 100%;
+    background-size: cover;
+}
+
+#sec4head{
+    font-size: 125px;
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+    padding-top: 65px;
+}
+
+#para4{
+    display: flex;
+    justify-content: center;
+    width: 1423px;
+    height: 170px;
+    font-size: 30px;
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    padding-top: 5px;
+}
+
+#contain4{
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    height: 470px;
+}
+
+#background5{
+    background-image: url(background5.png);
+    width: 100%;
+    background-size: cover;
+}
+
+#photo5{
+    width: 50%;
+}
+
+#sec5head{
+    font-size: 100px;
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+}
+
+#para5{
+    height: 210px;
+    font-size: 30px;
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+#but5{
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Lato";
+    text-align: center;
+}
+
+#content5{
+    display: flex;   
+}
+
+#sec5head{
+    margin-top: 50%;
+    margin-left: 5%; 
+}
+
+#para5{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#but5{
+    width: 322px;
+    height: 65px;
+    border-radius: 32px;
+    background-color: #eb4d55;
+    margin-left: 10%;
+}
+
+#two{
+    margin-top: 30px;
+}
+
+#four{
+    margin-top: 30px;
+}
+
+#background6{
+    
+}

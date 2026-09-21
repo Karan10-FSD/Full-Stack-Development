@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toing</title>
+    <link rel="shortcut icon" href="./GreenLogo.avif" type="image/x-icon">
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .firstdiv{
+            width: 100%;
+            height: 500px;
+            background-color: #018029;
+        }
+
+        .toinglogo{
+            height: 100px;
+            position: absolute;
+            top: 90px;
+            left: 250px;
+        }
+
+        .slogan{
+            color: white;
+            font-size: 65px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 210px;
+            left: 250px;
+        }
+
+        .photohero{
+            position: absolute;
+            height: 530px;
+            left: 850px;
+        }
+
+        .playstore{
+            position: absolute;
+            top: 375px;
+            left: 250px;
+            height: 50px;
+        }
+
+        .appstore{
+            position: absolute;
+            height: 50px;
+            top: 375px;
+            left: 450px;
+        }
+
+        .randomtext{
+            position: absolute;
+            top: 575px;
+            font-family: sans-serif;
+            left: 40%;
+        }
+
+        .box1{
+            background-color: #e4f5ec;
+            height: 320px;
+            width: 325px;
+            position: absolute;
+            top: 690px;
+            border-radius: 10%;
+            left: 218px;
+        }
+
+        .box2{
+            background-color: #e4f5ec;
+            height: 320px;
+            width: 325px;
+            position: absolute;
+            top: 690px;
+            border-radius: 10%;
+            left: 580px;
+        }
+
+        .box3{
+            background-color: #e4f5ec;
+            height: 320px;
+            width: 325px;
+            position: absolute;
+            top: 690px;
+            border-radius: 10%;
+            left: 938px;
+        }
+       
+        .menu{
+            position: absolute;
+            height: 280px;
+            bottom: 120px;
+        }
+
+        .price{
+            position: absolute;
+            height: 280px;
+            bottom: 120px;
+        }
+
+        .delivery{
+            position: absolute;
+            height: 280px;
+            bottom: 120px;
+        }
+
+        .box1textbold{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 20px;
+            bottom: 90px;
+            font-weight: bold;
+            left: 60px;
+        }
+
+        .box1textbold1{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 20px;
+            bottom: 70px;
+            font-weight: bold;
+            left: 93px;
+        }
+
+        .box1textnormal{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 18px;
+            bottom: 40px;
+            left: 60px;
+            color: rgb(96, 93, 93);
+        }
+
+         .box1textnormal1{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 18px;
+            bottom: 20px;
+            left: 90px;
+             color: rgb(96, 93, 93);
+        }
+        
+        .box2textbold{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 20px;
+            bottom: 90px;
+            font-weight: bold;
+            left: 90px;
+        }
+
+        .box2textbold1{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 20px;
+            bottom: 70px;
+            font-weight: bold;
+            left: 110px;
+        }
+
+        .box2textnormal{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 18px;
+            bottom: 40px;
+            left: 50px;
+            color:rgb(96, 93, 93);
+        }
+
+        .box2textnormal1{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 18px;
+            bottom: 20px;
+            left: 110px;
+            color:rgb(96, 93, 93);
+        }
+
+        .box3textbold{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 20px;
+            bottom: 90px;
+            font-weight: bold;
+            left: 90px;
+        }
+
+        .box3textbold1{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 20px;
+            bottom: 70px;
+            font-weight: bold;
+            left: 110px;
+        }
+
+         .box3textnormal{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 18px;
+            bottom: 40px;
+            left: 60px;
+            color:rgb(96, 93, 93);
+        }
+
+        .box3textnormal1{
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 18px;
+            bottom: 20px;
+            left: 145px;
+            color:rgb(96, 93, 93);
+        }
+
+         .randomtext2{
+            position: absolute;
+            top: 1060px;
+            font-family: sans-serif;
+            left: 40%;
+         }
+
+        .biryanibowl{
+            position: absolute;
+            height: 230px;
+            width: 210px;
+            top: 1150px;
+            left: 260px;
+        }
+
+         .friedrice{
+            position: absolute;
+            height: 230px;
+            width: 210px;
+            top: 1150px;
+            left: 520px;
+        }
+
+        .pavbhaji{
+            position: absolute;
+            height: 230px;
+            width: 210px;
+            top: 1150px;
+            left: 780px;
+        }
+
+        .butterparatha{
+            position: absolute;
+            height: 230px;
+            width: 210px;
+            top: 1150px;
+            left: 1040px;
+        }
+
+        .thali{
+            position: absolute;
+            height: 230px;
+            width: 210px;
+            top: 1450px;
+            left: 260px;
+        }
+
+        .burger{
+            position: absolute;
+            height: 230px;
+            width: 210px;
+            top: 1450px;
+            left: 520px;
+        }
+
+        .dosa{
+            position: absolute;
+            height: 230px;
+            width: 210px;
+            top: 1450px;
+            left: 780px;
+        }
+
+        .wrap{
+            position: absolute;
+            height: 230px;
+            width: 210px;
+            top: 1450px;
+            left: 1040px;
+        }
+
+       .footer{
+        position: absolute;
+        top: 1800px;
+        height: 320px;
+        background-color: #e4f5ec;
+        width: 100%;
+       }
+
+       .footerlogo{
+            position: absolute;
+            height: 65px;
+            left: 250px;
+            top: 60px;
+
+       }
+
+       #footertext1{
+        position: absolute;
+        left: 250px;
+        top: 140px;
+        font-weight: bold;
+        font-family: sans-serif;
+
+       }
+
+       #footertext2{
+         position: absolute;
+        left: 250px;
+        top: 175px;
+        font-weight: bold;
+        font-family: sans-serif;
+
+       }
+
+       #footertext3{
+        position: absolute;
+        left: 250px;
+        top: 215px;
+        font-weight: bold;
+        font-family: sans-serif;
+       }
+
+       .footerplaystore{
+        position: absolute;
+        width: 120px;
+        left: 480px;
+        top: 140px;
+       }
+
+       .footerappstore{
+        position: absolute;
+        width: 120px;
+        left: 480px;
+        top: 190px;
+       }
+</style>
+</head>
+<body>
+    <div class="firstdiv">
+        <img src="toinglogo.avif" alt="toinglogo" class="toinglogo">
+
+        <h1 class="slogan">
+            Khanna Flying.<br>
+            Price Toing!
+        </h1>
+
+        <img src="hero.avif" alt="random photo" class="photohero">
+
+        <img src="playstore.avif" alt="playstoreimg" class="playstore">
+
+        <img src="appstore.avif" alt="appstoreimg" class="appstore">
+
+    </div>
+    
+    <h1 class="randomtext"> What you get to enjoy </h1> 
+
+    <div class="box1"> 
+        <img src="menu.avif" alt="menuphoto" class="menu">
+
+        <div class="box1textbold"> Offline Prices, Online </div>
+         <div class="box1textbold1">       Convenience </div>
+
+       <div class="box1textnormal"> Pay what you see in the</div>
+        <div class="box1textnormal1">   restaurant menu </div>
+
+</div>
+
+    <div class="box2"> 
+        <img src="price.avif" alt="pricephoto" class="price">
+
+        <div class="box2textbold">Lowest Prices</div>
+        <div class="box2textbold1">of Items</div>
+
+        <div class="box2textnormal">Dishes start at ₹49 & most are</div>
+        <div class="box2textnormal1">under ₹250!</div>
+    </div>
+    
+    <div class="box3"> 
+        <img src="delivery.avif" alt="deliveryphoto" class="delivery">
+
+        <div class="box3textbold">Get Free Delivery</div>
+        <div class="box3textbold1">for all orders</div>
+
+        <div class="box3textnormal">Save on every order above</div>
+        <div class="box3textnormal1">₹99</div>
+    </div>
+
+   
+    <h1 class="randomtext2">All your favourite dishes</h1>
+
+    
+        <img src="biryani.avif" alt="biryaniphoto" class="biryanibowl">
+       
+        <img src="fried rice.avif" alt="friedricephoto" class="friedrice">
+
+        <img src="pav bhaji.avif" alt="pavbhajiphoto" class="pavbhaji">
+    
+        <img src="butter paratha.avif" alt="butterparathaphoto" class="butterparatha">
+
+
+        <img src="north thali.avif" alt="thaliphoto" class="thali">
+
+        <img src="burger.avif" alt="burgerphoto" class="burger">
+
+        <img src="dosa.avif" alt="dosaphoto" class="dosa">
+
+        <img src="wrap.avif" alt="wrapphoto" class="wrap">
+
+        
+<div class="footer">
+
+    <img src="toinglogo.avif" alt="logo" class="footerlogo">
+
+    <div id="footertext1">Privacy</div>
+    <div id="footertext2">Terms & Condition</div>
+    <div id="footertext3">Help & Support</div>
+
+    <img src="playstore.avif" alt="playstore" class="footerplaystore">
+    <img src="appstore.avif" alt="appstore" class="footerappstore">
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>
