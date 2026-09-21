@@ -1,0 +1,127 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>HTML Tables</title> </head> <body>
+<!-- Tables are used to display data in rows and columns. -->
+
+<h1>HTML Tables</h1>
+
+<h2>Basic Table</h2>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+    </tr>
+
+    <tr>
+        <td>Rahul</td>
+        <td>22</td>
+        <td>Delhi</td>
+    </tr>
+
+    <tr>
+        <td>Priya</td>
+        <td>21</td>
+        <td>Mumbai</td>
+    </tr>
+</table>
+
+<h2>Table with thead, tbody and tfoot</h2>
+
+<table border="1">
+
+    <caption>Employee Salary Report</caption>
+
+    <thead>
+        <tr>
+            <th>Employee</th>
+            <th>Department</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Aarav</td>
+            <td>Development</td>
+            <td>60000</td>
+        </tr>
+
+        <tr>
+            <td>Meera</td>
+            <td>Design</td>
+            <td>55000</td>
+        </tr>
+
+        <tr>
+            <td>Karan</td>
+            <td>Marketing</td>
+            <td>50000</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th colspan="2">Average Salary</th>
+            <td>55000</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<h2>Rowspan and Colspan</h2>
+
+<table border="1">
+
+    <tr>
+        <th rowspan="2">Product</th>
+        <th colspan="2">Sales</th>
+    </tr>
+
+    <tr>
+        <th>January</th>
+        <th>February</th>
+    </tr>
+
+    <tr>
+        <td>Laptop</td>
+        <td>25</td>
+        <td>32</td>
+    </tr>
+
+    <tr>
+        <td>Phone</td>
+        <td>40</td>
+        <td>48</td>
+    </tr>
+
+</table>
+
+<h2>Table Headers with Scope</h2>
+
+<table border="1">
+
+    <thead>
+        <tr>
+            <th scope="col">Course</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Level</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">HTML</th>
+            <td>4 Weeks</td>
+            <td>Beginner</td>
+        </tr>
+
+        <tr>
+            <th scope="row">JavaScript</th>
+            <td>8 Weeks</td>
+            <td>Intermediate</td>
+        </tr>
+    </tbody>
+
+</table>
+
+</body> </html>

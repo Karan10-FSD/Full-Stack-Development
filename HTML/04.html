@@ -1,0 +1,76 @@
+<h1>Images in HTML</h1>
+
+<p>
+    Images can be added to webpages using the img element.
+    The alt attribute provides a text alternative for the image.
+</p>
+
+<h2>Basic Image</h2>
+
+<img src="images/mountain.jpg"
+     alt="Snow covered mountain under a blue sky"
+     width="600"
+     height="400">
+
+<h2>Figure and Caption</h2>
+
+<figure>
+
+    <img src="images/forest.jpg"
+         alt="Green forest with sunlight passing through trees"
+         width="600"
+         height="400">
+
+    <figcaption>
+        A forest landscape during the morning.
+    </figcaption>
+
+</figure>
+
+<h2>Image as a Link</h2>
+
+<a href="gallery.html">
+    <img src="images/gallery.jpg"
+         alt="View the complete photo gallery"
+         width="300"
+         height="200">
+</a>
+
+<h2>Lazy Loading</h2>
+
+<img src="images/city.jpg"
+     alt="City skyline during sunset"
+     width="600"
+     height="400"
+     loading="lazy">
+
+<h2>Responsive Image</h2>
+
+<picture>
+
+    <source media="(min-width: 1000px)"
+            srcset="images/large-landscape.jpg">
+
+    <source media="(min-width: 600px)"
+            srcset="images/medium-landscape.jpg">
+
+    <img src="images/small-landscape.jpg"
+         alt="Landscape viewed from a high mountain">
+
+</picture>
+
+<h2>Image with Multiple Resolutions</h2>
+
+<img src="images/photo-800.jpg"
+     srcset="
+         images/photo-400.jpg 400w,
+         images/photo-800.jpg 800w,
+         images/photo-1200.jpg 1200w
+     "
+     sizes="(max-width: 600px) 400px,
+            (max-width: 1000px) 800px,
+            1200px"
+     alt="A lake surrounded by mountains">
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="userName" placeholder="Enter your name: " onblur="validate(this, 'error1', 'name')">
+    <span id="error1"></span>
+    <br><br>
+
+    <input type="password" id="userPassword" placeholder="Enter your password: " onblur="validate(this, 'error2', 'password')">
+    <span id="error2"></span>
+    <br><br>
+
+    <input type="email" id="userEmail" placeholder="Enter your email: " onblur="validate(this, 'error3', 'email')">
+    <span id="error3"></span>
+    <br><br>
+
+    <input type="text" id="userCity" placeholder="Enter your city: " onblur="validate(this, 'error4', 'city')">
+    <span id="error4"></span>
+
+    <script>
+
+        function validate(e, spnId, msg){
+
+            console.log(e.value);
+
+            if(e.value == ""){
+                document.getElementById(spnId).innerText = `Enter Your ${msg}`;
+                document.getElementById(spnId).style.color="red";
+            } else{
+                document.getElementById(spnId).innerText = "";
+            }
+
+        }
+
+    </script>
+
+
+</body>
+</html>

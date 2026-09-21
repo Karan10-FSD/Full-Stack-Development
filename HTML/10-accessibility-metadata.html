@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A practice page demonstrating accessible HTML."
+    >
+
+    <meta name="author" content="Your Name">
+
+    <title>Accessible HTML Practice</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Accessible HTML</h1>
+
+        <nav aria-label="Main navigation">
+
+            <a href="#content">
+                Skip to content
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main id="content">
+
+        <section>
+
+            <h2>Accessible Image</h2>
+
+            <img
+                src="images/profile.jpg"
+                alt="Portrait of the website author"
+                width="200"
+                height="200"
+            >
+
+        </section>
+
+        <section>
+
+            <h2>Accessible Form</h2>
+
+            <form>
+
+                <div>
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        aria-describedby="username-help"
+                        required
+                    >
+
+                    <small id="username-help">
+                        Username must contain at least 5 characters.
+                    </small>
+
+                </div>
+
+                <br>
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer id="contact">
+
+        <address>
+
+            Contact:
+            <a href="mailto:example@email.com">
+                example@email.com
+            </a>
+
+        </address>
+
+    </footer>
+
+</body>
+</html>
