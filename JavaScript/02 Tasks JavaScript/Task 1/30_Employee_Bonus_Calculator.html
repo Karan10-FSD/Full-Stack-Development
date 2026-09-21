@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30</title>
+</head>
+<body>
+
+<pre>
+Task 30 — Employee Bonus Calculator
+Create variables for:
+
+Employee salary
+Years of experience
+Performance rating
+Calculate the bonus using these rules:
+
+Experience ≥ 5 years and rating ≥ 8 → 20% bonus
+Experience ≥ 3 years and rating ≥ 7 → 15% bonus
+Experience ≥ 1 year and rating ≥ 6 → 10% bonus
+Otherwise → No bonus
+Display:
+
+Salary
+Bonus Percentage
+Bonus Amount
+Final Salary
+</pre>
+
+<script>
+
+    let empsal = 75000;
+    let exp = 4;
+    let rating = 9;
+    let bonus;
+
+    if(exp >= 5 && rating >= 8 ){
+        console.log("The bonus is:",bonus=empsal*20/100);
+    }
+    else if(exp >= 3 && rating >= 7){
+        console.log("The bonus is:",bonus=empsal*15/100);
+    }
+    else if(empsal >= 1 && rating >= 6){
+        console.log("The bonus is:",bonus=empsal*10/100);
+    }
+    else{
+        console.log("The bonus is:",bonus=0);
+    }
+
+
+    empsal = empsal + bonus;
+
+    console.log("The Employee salary is:",empsal);
+    console.log("The Employee Expirence is:",exp);
+    console.log("The Final Salary is:",empsal);
+
+</script>
+    
+</body>
+</html>

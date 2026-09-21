@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qus 20</title>
+</head>
+<body>
+
+<pre>
+
+</pre>
+Task 20 — Calculator Function
+
+Create a function:
+
+calculator(a, b, operator)
+The function should perform:
+
+Addition +
+Subtraction -
+Multiplication *
+Division /
+Return the result.
+
+Example
+calculator(20, 5, "+")
+Output: 25
+
+<script>
+
+    function calculator(a, b, operator){
+
+        console.log("The value of A: ", a);
+        console.log("The value of B: ", b);
+
+        if(operator == '+'){
+            console.log("The sum of numbers: ", a + b);
+        }
+        else if(operator == '-'){
+            console.log("The Difference of numbers: ", a - b);
+        }
+        else if(operator == '*'){
+            console.log("The Difference of numbers: ", a * b);
+        }
+        else if(operator == '/'){
+            console.log("The Difference of numbers: ", a / b);
+        }
+        else{
+            console.log("You have puted wrong operator")
+        }
+    }
+
+    calculator(15, 10, '/');
+
+</script>
+    
+</body>
+</html>

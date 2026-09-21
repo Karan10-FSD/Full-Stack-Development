@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27</title>
+</head>
+<body>
+
+<pre>
+Task 27 — Electricity Bill
+Create a variable containing the number of electricity units consumed.
+
+Calculate the bill according to:
+
+Units	Rate
+0–100	₹5/unit
+101–200	₹7/unit
+Above 200	₹10/unit
+Display the total electricity bill.
+</pre>
+
+<script>
+    let unitconsumed = 8500;
+
+    if(unitconsumed > 0 && unitconsumed <= 100){
+        console.log("Units Consumed Total Bill is:",unitconsumed*5);
+    }
+    else if(unitconsumed > 101 && unitconsumed <= 200){
+        console.log("Units Consumed Total Bill is:",unitconsumed*7);
+    }
+    else{
+        console.log("Units Consumed Total Bill is:",unitconsumed*10);
+    }
+</script>
+    
+</body>
+</html>

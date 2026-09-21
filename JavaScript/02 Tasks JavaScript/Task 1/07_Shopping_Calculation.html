@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7 Shopping Calculation</title>
+</head>
+<body>
+<pre>
+Task 7 — Shopping Calculation
+
+
+Create variables:
+
+let productPrice = 750;
+let quantity = 4;
+Calculate:
+
+Total price
+Price after adding 18% GST
+Display both results.
+</pre>
+
+<script>
+    let pro_price = 750;
+    let pro_quan = 4;
+
+    console.log("The Product's Price is:",pro_price);
+    console.log("The Product's Quantity is:",pro_quan);
+
+    let total_price = pro_price * pro_quan;
+
+    console.log("The total Price of Product is:",pro_price);
+
+    let gst = total_price * 18/100;
+
+    console.log("The GST is:",gst)
+
+    console.log("The Product's price after adding GST:",total_price + gst);
+</script>
+</body>
+</html>

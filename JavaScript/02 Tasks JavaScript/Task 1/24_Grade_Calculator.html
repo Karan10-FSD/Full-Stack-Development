@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24</title>
+</head>
+<body>
+<pre>
+Task 24 — Grade Calculator
+Create a variable containing a student's percentage.
+
+Assign grades according to these rules:
+
+Percentage	Grade
+90–100	A
+75–89	B
+60–74	C
+35–59	D
+Below 35	F
+Display the appropriate grade.
+</pre>
+
+<script>
+    let per = 75;
+
+    if(per>=90 && per<=100){
+        console.log("Grade is'A'");
+    }
+    else if(per>=75 && per<=89){
+        console.log("Grade is 'B'");
+    }
+    else if(per>=60 && per<=74){
+        console.log("Grade is 'C'");
+    }
+    else if(per>=35 && per<=59){
+        console.log("Grade is 'D'");
+    }
+    else{
+        console.log("Fail")
+    }
+</script>
+</body>
+</html>

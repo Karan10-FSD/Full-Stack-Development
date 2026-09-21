@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29</title>
+</head>
+<body>
+
+<pre>
+Create variables for:
+
+Purchase amount
+Is the customer a member
+Apply discounts according to the following rules:
+
+Purchase Amount	Discount
+₹10,000 or more	20%
+₹5,000–₹9,999	10%
+Below ₹5,000	No discount
+If the customer is a member, give an additional 5% discount.
+
+Calculate and display:
+
+Original amount
+Discount amount
+Final amount
+</pre>
+
+<script>
+
+    let purchaseamt = 40500;
+    let cust = true;
+    let dis;
+
+    if(purchaseamt >= 10000){
+        console.log("The discount will be:",dis = purchaseamt*20/100);
+    }
+    else if(purchaseamt >= 5000 && purchaseamt <= 9999){
+        console.log("The discount will be:",dis=purchaseamt*10/100);
+    }
+    else{
+        console.log("There is no discount");
+    }
+
+console.log("The Original Amount is:",purchaseamt);
+console.log("The Customer is a memeber?:",cust);
+console.log("The Discount Amount is:",dis);
+
+
+console.log("The Final Amount is:",purchaseamt-dis);
+
+
+
+</script>
+    
+</body>
+</html>

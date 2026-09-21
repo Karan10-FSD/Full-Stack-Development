@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+</head>
+<body>
+
+<pre>
+Task 10 — Grade Calculator
+
+Create a function calculateGrade(marks).
+
+Use the following grading system:
+
+Marks	Grade
+90–100	A
+75–89	B
+60–74	C
+40–59	D
+Below 40	F
+Return the grade.
+</pre>
+    
+<script>
+
+function calculateGrade(marks){
+
+    if(marks >= 90 && marks <= 100){
+        console.log("Grade = A")
+    }
+    else if(marks >= 75 && marks <= 89){
+        console.log("Grade = B")
+    }
+    
+    else if(marks >= 60 && marks <= 74){
+        console.log("Grade = C")
+    }
+    
+    else if(marks >= 40 && marks <= 59){
+        console.log("Grade = D")
+    }
+    else{
+        console.log("Fail")
+    }
+}
+
+    calculateGrade(99);
+
+</script>
+
+</body>
+</html>

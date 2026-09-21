@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qus 13</title>
+</head>
+<body>
+
+<pre>
+Task 13 — Calculate Price with Default Discount
+
+Create a function:
+
+calculatePrice(price, discount = 10)
+The function should calculate the final price after applying the discount.
+
+Test the function with:
+
+A custom discount
+No discount argument
+</pre>
+
+<script>
+
+function calculatePrice(price, discount = 10){
+    console.log("The price of item: ",price);
+    console.log("The discount of item: ",discount = price * discount/100);
+}
+
+calculatePrice(500);
+
+function calculatePrice1(price, discount){
+     console.log("The price of item: ",price);
+    console.log("The discount of item: ",discount = price * discount/100);
+}
+
+calculatePrice1(500, 25);
+
+</script>
+    
+</body>
+</html>
